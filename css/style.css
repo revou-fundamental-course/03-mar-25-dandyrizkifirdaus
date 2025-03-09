@@ -1,0 +1,57 @@
+/* Ini file css */
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-logo {
+    height: 50px;
+    width: 50px;
+    background-image: url(data:image/png;base64,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);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+nav {
+    display: flex;
+}
+
+nav>a {
+    padding: 8px;
+    border: 1px solid;
+    text-decoration: none;
+    color: black;
+}
+
+.banner-img {
+    border: 1px solid;
+    height: 500px;
+}
+
+.our-profile-content {
+    border: 1px solid;
+    height: 500px;
+    align-content: center;
+    text-align: center;
+}
+
+.achievement-content {
+    border: 1px solid;
+    height: 500px;
+    align-content: center;
+    text-align: center;
+}
+
+.message-us-content {
+    border: 1px solid;
+    height: 500px;
+    align-content: center;
+    text-align: center;
+}
+
+footer {
+    text-align: left;
+}
