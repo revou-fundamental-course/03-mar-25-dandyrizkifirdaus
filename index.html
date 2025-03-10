@@ -96,7 +96,7 @@
         </section>
     <hr />
 
-      
+
         <!-- Lecture -->
         <section id="lecture">
             <header>
@@ -121,6 +121,7 @@
         </section>
     <hr />
 
+
         <!-- Message Us Content -->
         <section id="message-us">
             <header>
@@ -128,16 +129,30 @@
             </header>
 
             <!-- Message Us Content -->
-            <div class="message-us-content">
-                <p>Lorem Ipsum Dolor Sit Amet Adipiscing...</p>
+            <div class="message-form" id='messages'>
+                <h2 >Message Us</h2>
+                <input type="text" id="name" placeholder="Nama Lengkap" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="number" id="phone" placeholder="Nomor Telepon" required>
+                <textarea id="message" rows="4" placeholder="Pesan" required></textarea>
+                <button id="submit">Kirim Pesan</button>      
+            </div>
+            <div class="result" id="result" style="display:none;">
+                <h3>Pesan Kamu:</h3>
+                <p id="displayName"></p>
+                <p id="displayEmail"></p>
+                <p id="displayPhone"></p>
+                <p id="displayMessage"></p>
             </div>
         </section>
+    </hr>    
     </main>
-
+<hr>
     <!-- Main Footer -->
     <footer>
         <p>&copy; 2025 Dandy Rizki Firdaus</p>
     </footer>
+</hr>
 </body>
 
 </html>
