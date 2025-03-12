@@ -107,40 +107,38 @@ nav>a {
 .lecture-slider {
     position: relative;
     width: 100%;
-    max-width: 400px; /* Bisa diubah sesuai kebutuhan */
+    max-width: 600px;
     margin: auto;
+    text-align: center;
 }
 
 .lecture-img {
-    display: none; /* Semua slide disembunyikan kecuali yang aktif */
-    text-align: center;
+    width: 100%;
+    display: none; /* Pastikan gambar tidak bertumpuk */
 }
 
 .lecture-img img {
     width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 
 .button-container {
     display: flex;
     justify-content: center;
-    gap: 10px;    margin-top: 10px;
+    gap: 10px;
+    margin-top: 10px;
 }
 
 .button-container button {
     padding: 10px 15px;
     font-size: 16px;
+    cursor: pointer;
     border: none;
     background-color: #ff00aa;
     color: white;
-    cursor: pointer;
     border-radius: 5px;
 }
-
-.button-container button:hover {
-    background-color: #0056b3;
-}
-
 
 .message-form {
     background: white;
@@ -162,10 +160,7 @@ nav>a {
     border-radius: 5px;
 }
 
-/* .form-group {
-    display: flex;
-    align-items: center;
-} */
+
 
 select {
     flex: 1; 

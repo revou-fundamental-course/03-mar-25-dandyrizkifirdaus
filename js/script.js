@@ -41,28 +41,34 @@ document.getElementById('submit').addEventListener('click', function () {
 
 
 // Slide show
-var slideIndex = 1;
-showDivs(slideIndex);
+var slideIndex = 0;
+showSlidesAuto();
 
 function plusDivs(n) {
-    showDivs(slideIndex += n);
+    slideIndex += n;
+    showSlides();
 }
 
-function showDivs(n) {
+// Slide otomatis setiap 3 detik
+function showSlidesAuto() {
     var slides = document.getElementsByClassName("lecture-img");
-    
-    if (n > slides.length) {
-        slideIndex = 1; // Kembali ke slide pertama jika melebihi jumlah slide
-    }
-    if (n < 1) {
-        slideIndex = slides.length; // Kembali ke slide terakhir jika kurang dari 1
-    }
-
-    // Sembunyikan semua slide
     for (var i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
-
-    // Tampilkan slide yang aktif
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1; }
     slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlidesAuto, 3000);
+}
+
+// Slide manual (Previous & Next)
+function showSlides() {
+    var slides = document.getElementsByClassName("lecture-img");
+    if (slideIndex >= slides.length) { slideIndex = 0; }
+    if (slideIndex < 0) { slideIndex = slides.length - 1; }
+
+    for (var i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex].style.display = "block";
 }
