@@ -142,6 +142,14 @@
             <div class="message-form" id='messages'>
                 <h2 >Message Us</h2>
                 <input type="text" id="name" placeholder="Nama Lengkap" required>
+                    <select id="gender">
+                        <option value="">-- Jenis Kelamin --</option>
+                        <option value="Laki-laki">Laki-laki</option>
+                        <option value="Perempuan">Perempuan</option>
+                    </select>
+                </select>
+                <label for="birthDate"></label>
+                <input type="date" id="birthDate">
                 <input type="email" id="email" placeholder="Email" required>
                 <input type="number" id="phone" placeholder="Nomor Telepon" required>
                 <textarea id="message" rows="4" placeholder="Pesan" required></textarea>
@@ -149,8 +157,11 @@
             </div>
             <div class="result" id="result" style="display:none;">
                 <h3>Pesan Kamu:</h3>
+                <div id="displayDateTime"></div>
                 <p id="displayName"></p>
+                <div id="displayGender"></div>
                 <p id="displayEmail"></p>
+                <div id="displayBirthDate"></div>
                 <p id="displayPhone"></p>
                 <p id="displayMessage"></p>
             </div>

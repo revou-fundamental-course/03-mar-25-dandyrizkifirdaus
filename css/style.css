@@ -161,8 +161,26 @@ nav>a {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
+/* .form-group {
+    display: flex;
+    align-items: center;
+} */
+
+select {
+    flex: 1; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    height: 37px;
+    width: 101%;
+    margin: 10px 0;
+}
+
 .message-form button {
-    background-color: #f5f2e8;
+    background-color: #ff00aa;
+    color: white;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
@@ -183,6 +201,7 @@ nav>a {
 .result p {
     background: #f8f8f871;
 }
+
 footer {
     text-align: right;
 }
