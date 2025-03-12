@@ -5,7 +5,19 @@
 .main-header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-header {
+        flex-direction: column;
+    }
+    nav {
+        width: 100%;
+        flex-direction: column;
+        padding-top: 5px;
+    }
 }
 
 .main-logo {
@@ -28,7 +40,7 @@ nav>a {
     color: black;
 }
 
-.banner-img {
+.isi {
     border: 1px solid;
     height: auto;
     h2 {
@@ -88,27 +100,47 @@ nav>a {
     display: flex;
     flex-direction: column; 
     align-items: center;
-    gap: 10px; 
+    gap: 10px;
+    padding-bottom: 10px; 
 }
 
-.lecture h2 {
-    margin-bottom: 20px; 
+.lecture-slider {
+    position: relative;
+    width: 100%;
+    max-width: 400px; /* Bisa diubah sesuai kebutuhan */
+    margin: auto;
 }
 
-.lecture-container {
-    display: flex;
+.lecture-img {
+    display: none; /* Semua slide disembunyikan kecuali yang aktif */
+    text-align: center;
+}
+
+.lecture-img img {
+    width: 100%;
     height: auto;
-    justify-content: center;
-    gap: 100px; 
-    margin-bottom: 20px;
 }
 
-.lecture img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border: 1px #333;
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;    margin-top: 10px;
 }
+
+.button-container button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    background-color: #ff00aa;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button-container button:hover {
+    background-color: #0056b3;
+}
+
 
 .message-form {
     background: white;

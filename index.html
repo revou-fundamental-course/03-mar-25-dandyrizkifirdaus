@@ -25,7 +25,7 @@
         <nav>
             <a href="#home">Home</a>
             <a href="#my-skill">My Skill</a>
-            <a href="#achievement">Achievement</a>
+            <a href="#lecture">Lecture</a>
             <a href="#message-us">Message Us</a>
         </nav>
     </header>
@@ -41,8 +41,8 @@
                 <p>Halo Guys saya Dandy Rizki Firdaus senang telah berkunjung, website ini pelatihan saya untuk belajar HTML,CSS,JS di Revo U</p>
             </header>
 
-            <!-- Banner Autoslide -->
-            <div class="banner-img">
+            <!-- Isi -->
+            <div class="isi">
                 <h2>Siapa itu RevoU?</h2>
                 <p><b>RevoU</b> ini adalah <b>sekolah online</b> (EdTech) yang membekali para murid dengan 
                     keterampilan digital yang lagi in-demand di zaman industri teknologi 4.0 saat ini. 
@@ -104,24 +104,34 @@
             </header>
 
             <!-- Lecture Content -->
-            <div class="lecture">
-                <h2>Tutor Mini Course</h2>
-                <div class="lecture-container">
-                    <div class="lecture">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_uBswn9ABmaN8K5XjpICrHiH25OgUXhoIww&s" alt="Lecture 1">
-                        <p><b>Harfi Novian</b></p>
-                    </div>
-                    <div class="lecture">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8jgmItYxHJNqnX61_WhAguf84JQze_Nwv-A&s" alt="Skill 2">
-                        <p><b>Achmad Yama Roni</b></p>
-                    </div>
+            <div class="lecture-slider">
+                <div class="lecture-img">
+                    <img src="https://media.licdn.com/dms/image/v2/D5603AQHh7DJIhjSFJQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1681834316066?e=1747267200&v=beta&t=iFMqkJZq8pyQrsVIs25PM7dob2YssO5ELGZDBRsV8vY">
+                    <p><b>Harfi Novian</b></p>
+                </div>
+                <div class="lecture-img">
+                    <img src="https://media.licdn.com/dms/image/v2/C5603AQE6tuC-cNCzNQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1601904777548?e=1747267200&v=beta&t=qUeYr5ZJBkxMqU05ZT4jjGXdXpUCBp0EP18oZ-shVbI">
+                    <p><b>Achmad Yama Roni</b></p>
+                </div>
+                <div class="lecture-img">
+                    <img src="https://avatars.githubusercontent.com/u/36966196?v=4">
+                    <p><b>Alvian Zachry</b></p>
+                </div>
+                <div class="lecture-img">
+                    <img src="https://media.licdn.com/dms/image/v2/D5603AQGgS6FVeakh0A/profile-displayphoto-shrink_800_800/B56ZS6hI4lGsAc-/0/1738296037731?e=1747267200&v=beta&t=ByQO2lp1ZiwIm7QM82SEJ_hHw_Wb7XYWTkXXSNNRZ_c">
+                    <p><b>Ramadhan Rahmat</b></p>
                 </div>
             </div>
-
+            
+            <!-- Tombol Navigasi -->
+            <div class="button-container">
+                <button onclick="plusDivs(-1)">Previous</button>
+                <button onclick="plusDivs(1)">Next</button>
+            </div>
         </section>
     <hr />
 
-
+  
         <!-- Message Us Content -->
         <section id="message-us">
             <header>
